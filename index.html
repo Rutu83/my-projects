@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+            opacity: 0; /* Initially hidden */
+            animation: fadeIn 1s ease-in-out forwards; /* Animation on load */
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .main-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            animation: fadeMain 1s ease-in-out forwards;
+        }
+        .additional-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .additional-images img {
+            max-width: calc(50% - 5px); /* Half the width with gap */
+            height: auto;
+            border-radius: 8px;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeMain {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes fadeIn1 {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn2 {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn3 {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn4 {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn5 {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>My Projects</h1>
+
+    <div class="card" id="organic-agri-products">
+        <a href="https://play.google.com/store/apps/details?id=com.cheak.organicagriproducts" target="_blank">Link of Organic Agri Products Project</a>
+        <div>
+            <h2>Organic Agri Products</h2>
+            <img class="main-image" src="organic.jpeg" alt="Organic Agri Products Image">
+            <p>Organic product store</p>
+        </div>
+        <div class="additional-images">
+            <img src="organic1.jpeg" alt="Additional Image 1" style="animation: fadeIn1 1s ease-in-out forwards;">
+            <img src="organic2.jpeg" alt="Additional Image 2" style="animation: fadeIn2 1s ease-in-out forwards;">
+        </div>
+    </div>
+
+    <div class="card" id="greenline">
+        <a href="#" target="_blank">Link of Local Projects</a>
+        <div>
+            <h2>GreenLine</h2>
+            <img class="main-image" src="green.jpeg" alt="GreenLine Image">
+            <p>Billing Management App</p>
+        </div>
+        <div class="additional-images">
+            <img src="green1.jpeg" alt="Additional Image 1" style="animation: fadeIn3 1s ease-in-out forwards;">
+            <img src="green2.jpeg" alt="Additional Image 2" style="animation: fadeIn4 1s ease-in-out forwards;">
+            <img src="green3.jpeg" alt="Additional Image 3" style="animation: fadeIn5 1s ease-in-out forwards;"> 
+            <img src="green4.jpeg" alt="Additional Image 4" style="animation: fadeIn1 1s ease-in-out forwards;">
+        </div>
+    </div>
+
+    <!-- <div class="card" id="personal-assistant">
+      
+        <a href="#" target="_blank">Link of Local Projects</a>
+        <div>
+            <h2>Personal Assistant</h2>
+            <img class="main-image" src="path_to_greenline_image.jpg" alt="Personal Assistant Image">
+            <p>Personal Assistant App</p>
+        </div>
+        <div class="additional-images">
+            <img src="additional_image5.jpg" alt="Additional Image 5" style="animation: fadeIn2 1s ease-in-out forwards;">
+            <img src="additional_image6.jpg" alt="Additional Image 6" style="animation: fadeIn3 1s ease-in-out forwards;">
+        </div>
+    </div> -->
+
+    <div class="card" id="wa-msg">
+        <a href="https://play.google.com/store/apps/details?id=com.is.whatsappdirectmessaagesender" target="_blank">Link of WA Msg Project</a>
+        <div>
+            <h2>WA Msg</h2>
+            <img class="main-image" src="wa.jpeg" alt="WA Msg Image">
+            <p>Direct WhatsApp Message Sender App</p>
+        </div>
+        <div class="additional-images">
+            <img src="wa1.jpeg" alt="Additional Image 7" style="animation: fadeIn4 1s ease-in-out forwards;">
+        </div>
+    </div>
+
+    <div class="card" id="gear-sport-pro">
+        <button onclick="location.href='#'" style="cursor:pointer;">Link of Gear Sport Pro Project</button>
+        <div>
+            <h2>Gear Sport Pro</h2>
+            <img class="main-image" src="gear.jpeg" alt="Gear Sport Pro Image">
+            <p>Sporting Item Buying App</p>
+        </div>
+        <div class="additional-images">
+            <img src="gear2.jpeg" alt="Additional Image 9" style="animation: fadeIn5 1s ease-in-out forwards;">
+            <img src="gear1.jpeg" alt="Additional Image 10" style="animation: fadeIn1 1s ease-in-out forwards;">
+            <img src="gear3.jpeg" alt="Additional Image 10" style="animation: fadeIn2 1s ease-in-out forwards;">
+        </div>
+    </div>
+</body>
+</html>
